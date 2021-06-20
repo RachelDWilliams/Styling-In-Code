@@ -1,0 +1,84 @@
+Styling in Code Episode 2
+-----
+Todo:
+
+ - Make Menu Object using below codepen
+	- Screenshot the procress
+ - GIMP design Each poem beforehand
+ - Make Page Capturing Each Tiny Change
+	- Decide on whether to show coding the fancy stuff
+	- Dynamic Background changes
+	- Maybe have Static title that has dynamically changing style
+ - Find Good Music
+ - Make Video
+
+-----
+
+//////Changed To Tribute to the Work of Alexander Posey//////
+
+Recreate this Code Pen on your own.
+	https://codepen.io/Shven/pen/chKqD
+
+
+Collection of Poems
+	Seven Poems One Overview
+	
+		-The Dew and The Bird
+			https://poets.org/poem/dew-and-bird
+		-On the Hills of Dawn
+			https://poets.org/poem/hills-dawn
+		-A Vision of Rest
+			https://poets.org/poem/vision-rest-0
+		My Hermitage
+			https://poets.org/poem/my-hermitage
+		Autumn
+			https://poets.org/poem/autumn-6
+		To My Wife
+			https://poets.org/poem/my-wife-0
+		My Fancy
+			https://poets.org/poem/my-fancy
+	
+	
+		
+Change Style of Page based on which poem is clicked.  
+
+
+Circle Menu
+	Symbols With no text unless hovered over?
+	
+Research Pug and Stylus
+	If Licensing isn't an issue, use them.  This will help you learn. 
+
+All one Webpage.  	
+	
+-----
+Fancy Stuff
+
+Menu Style Like a circle
+	-onHover changes to suit the style of the Poem
+	
+Text transition
+	Animation?
+		Wipe
+		Fade in/out
+	Modal?
+		I use this too much
+		Need to branch out
+		
+Click to Read next line?
+
+Mobile Friendly
+	-A Must
+
+----------
+Citations
+----------
+
+
+Linda D. Wilson, “Posey, Alexander Lawrence,” The Encyclopedia of Oklahoma History and Culture, https://www.okhistory.org/publications/enc/entry.php?entry=PO019.
+
+
+
+
+
+
