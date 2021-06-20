@@ -1,0 +1,125 @@
+@font-face {
+	font-family: gabriola;
+	src: url(gabriola.ttf);
+}
+
+header{
+	text-align: center;
+	color: white;
+	font-family: gabriola, cursive;
+	font-weight: 100;
+	font-size: 3em;
+	margin-bottom: 5%;
+}
+
+header h2{
+	font-size: .7em;
+}
+
+header hr {
+	width: 10%;
+	margin: 4px auto;
+}
+
+.bImg{
+	position: fixed;
+    top: 0;
+    z-index: -10;
+    margin: 0;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.icon_group{
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 40%;
+}
+
+.icon{
+	position: block;
+}
+
+.icon img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+
+.icon img:hover{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+#druid {
+	padding-right: 4%;
+}
+
+#fighter {
+	padding-right: 25%;
+}
+
+#cleric {
+	margin-top: -30px;
+}
+
+.screen	{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.692);
+}
+
+.modal_group {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.modalContainer {
+	display: none; 
+	position: fixed; 
+	width: 50%;
+	height: 60%;
+	overflow: hidden;
+	background-color: rgba(101, 102, 62, 0.938);
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 2em;
+	z-index: 4;
+	color: antiquewhite;
+} 
+
+.lColumn {
+	text-align: left;
+	margin: 10px;
+}
+
+.lColumn hr {
+	width: 70%;
+}
+
+.rColumn{
+	border-left: 1px solid antiquewhite;
+	padding-left: 7px;
+}
+
+.rColumn h2 {
+	font-size: .85em
+}
+
+.rColumn img{
+	display: block;
+	max-width: 250px;
+	max-height: 250px;
+	width: auto;
+	height: auto;
+	border-radius: 50%;
+}

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 100 80" width="40" height="40">
+  <rect width="100" height="20"></rect>
+  <rect y="30" width="100" height="20"></rect>
+  <rect y="60" width="100" height="20"></rect>
+</svg>
+
+
+--------
+
+
+04. Modify code for IE
+Rule 2 mentioned that correctly optimised SVGs are fully responsive in modern browsers. That's true if we count Microsoft Edge as a modern browser. For IE 9-11, we have a few issues to address. If we are using the SVG as an image:
+
+<img src="countdown.svg alt="Countdown">
+We can force IE9-11 to display the image correctly using the CSS attribute selector:
+
+img[src$=".svg"] {width: 100%;}
+SVG images work well in general production, but have limited interactivity: most browsers will ignore interactivity and animation inside an SVG placed on a page as an . In addition, SVG images are an extra HTTP request for the browser. 
+
+For these and other reasons, SVG is increasingly used inline. In that case, the SVG code needs a little more treatment for IE:
+
+<body>
+…
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525 365" preserveAspectRatio="xMidYMin slice">
+In addition to the preserveAspectRatio attribute, IE needs a little more guidance to preserve the correct scaling of the image: take the width of the SVG (365 in this case), divide it by the height (525) and multiply the result by 100 per cent. This will become the padding-bottom value for the SVG, 'propping' it open enough in IE to display the SVG in its correct aspect ratio:
+
+<body>
+…
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 525 365" 
+preserveAspectRatio="xMidYMin slice"
+style="width: 100%; padding-bottom: 69.52%; height: 1px; overflow: visible">
+Note that, in order to keep things concise and clear, the code samples in the rest of this article don't include these changes. Amelia Bellamy-Royds has written an excellent article on scaling SVG.
+
+--------
+
+
+
+<a target="_blank" cursor="pointer" pointer-events="all">
+  <defs/>
