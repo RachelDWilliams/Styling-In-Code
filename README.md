@@ -5,4 +5,5 @@ This project was inspired by my love of CSS. There is something about the sublim
 Despite this project being currently on hold while I continue my studies, I have plans for at least 10 episodes total.
 
 Episode 1 is FINAL
+
 Episode 2 is WIP
